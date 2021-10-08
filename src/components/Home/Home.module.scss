@@ -1,0 +1,83 @@
+@import "./src/common/style/sass/variables";
+@import "./src/common/style/sass/mixins";
+
+body {
+  background-color: #111;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+
+  @media (min-width: 580px) {
+    text-align: center;
+  }
+
+  @media (min-width: 992px) {
+    text-align: left;
+  }
+
+  & .wrapper {
+    @media (min-width: 580px) {
+      width: 500px;
+    }
+  }
+
+  & h1 {
+    @include text($titleFontFamily, 28px, 39px, upperCase, $rootColor);
+    margin: 18px 0 13px;
+
+    @media (min-width: 580px) {
+      font-size: 38px;
+      line-height: 48px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 42px;
+      line-height: 52px
+    }
+
+    & span {
+      color: #fff;
+      display: block;
+      font-size: 22px;
+      @media (min-width: 580px) {
+        font-size: inherit;
+      }
+    }
+  }
+
+  & p {
+    @include text($textFontFamily, 14px, 28px, none, #fff);
+    margin: 10px 0 23px;
+
+    @media (min-width: 992px) {
+      font-size: 16px;
+      margin: 15px 0 28px;
+      line-height: 35px;
+    }
+  }
+
+  & .backDesktop {
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: -50%;
+    background-color: $rootColor;
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+}
+
+

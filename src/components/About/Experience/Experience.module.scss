@@ -1,0 +1,16 @@
+@import "./src/common/style/sass/variables";
+@import "./src/common/style/sass/mixins";
+
+.list {
+  color: white;
+  list-style-type: none;
+  padding-left: 0;
+  padding-bottom: 15px;
+  @media (min-width: 992px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+

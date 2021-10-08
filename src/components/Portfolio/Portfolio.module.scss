@@ -1,0 +1,21 @@
+
+.portfolioWrapper {
+  padding: 85px 25px 0;
+  color: #fff;
+
+  .list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      padding: 15px;
+      img{
+        object-fit: cover;
+        object-position: top;
+        border-radius: 20px;
+      }
+    }
+  }
+}

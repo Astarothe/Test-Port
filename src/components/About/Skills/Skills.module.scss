@@ -1,0 +1,47 @@
+@import "./src/common/style/sass/variables";
+@import "./src/common/style/sass/mixins";
+
+.list {
+  color: white;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
+
+
+  .item {
+    flex: 0 0 49%;
+    padding: 20px 0;
+
+    @include text($textFontFamily, 16px, 1.2, upperCase, #fff);
+    border-radius: 0px;
+    box-shadow: 5px 5px 16px #252525;
+    border: 1px solid #252525;
+    @media (min-width: 580px) {
+      flex: 0 0 39%;
+      box-shadow: 10px 10px 16px black, 0px 0px 4px steelblue;
+      margin: 25px;
+    }
+    @media (min-width: 768px) {
+      flex: 0 0 30%;
+    }
+    @media (min-width: 992px) {
+      flex: 0 0 19%;
+      margin: 19px;
+    }
+    @media (min-width: 1200px) {
+      flex: 0 0 20%;
+      margin: 25px;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+  }
+}
