@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.41fb8719.chunk.css",
+    "main.js": "/Portfolio/static/js/main.6056c734.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.6056c734.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.3d55a492.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.3d55a492.js.map",
+    "static/js/2.836ee320.chunk.js": "/Portfolio/static/js/2.836ee320.chunk.js",
+    "static/js/2.836ee320.chunk.js.map": "/Portfolio/static/js/2.836ee320.chunk.js.map",
+    "static/js/3.7eb24f77.chunk.js": "/Portfolio/static/js/3.7eb24f77.chunk.js",
+    "static/js/3.7eb24f77.chunk.js.map": "/Portfolio/static/js/3.7eb24f77.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.41fb8719.chunk.css.map": "/Portfolio/static/css/main.41fb8719.chunk.css.map",
+    "static/js/2.836ee320.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.836ee320.chunk.js.LICENSE.txt",
+    "static/media/codewars-icon.273bac90.svg": "/Portfolio/static/media/codewars-icon.273bac90.svg",
+    "static/media/css-icon.be022d5e.svg": "/Portfolio/static/media/css-icon.be022d5e.svg",
+    "static/media/github-icon.0630ee25.svg": "/Portfolio/static/media/github-icon.0630ee25.svg",
+    "static/media/html-icon.a5d912f0.svg": "/Portfolio/static/media/html-icon.a5d912f0.svg",
+    "static/media/javascript-icon.63880783.svg": "/Portfolio/static/media/javascript-icon.63880783.svg",
+    "static/media/linkedin-icon.ccdf8b67.svg": "/Portfolio/static/media/linkedin-icon.ccdf8b67.svg",
+    "static/media/photo-filter.ff868591.png": "/Portfolio/static/media/photo-filter.ff868591.png",
+    "static/media/react-icon.880763ea.svg": "/Portfolio/static/media/react-icon.880763ea.svg",
+    "static/media/redux-icon.4cb8cb35.svg": "/Portfolio/static/media/redux-icon.4cb8cb35.svg",
+    "static/media/rest-api-icon.19f8cab1.svg": "/Portfolio/static/media/rest-api-icon.19f8cab1.svg",
+    "static/media/sass-icon.b7c7a814.svg": "/Portfolio/static/media/sass-icon.b7c7a814.svg",
+    "static/media/sedona.f628fda2.jpg": "/Portfolio/static/media/sedona.f628fda2.jpg",
+    "static/media/shelter.4713e0ba.png": "/Portfolio/static/media/shelter.4713e0ba.png",
+    "static/media/telegrams-icon.1d8b5609.svg": "/Portfolio/static/media/telegrams-icon.1d8b5609.svg",
+    "static/media/typescript-icon.e48e3aea.svg": "/Portfolio/static/media/typescript-icon.e48e3aea.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d55a492.js",
+    "static/js/2.836ee320.chunk.js",
+    "static/css/main.41fb8719.chunk.css",
+    "static/js/main.6056c734.chunk.js"
+  ]
+}
