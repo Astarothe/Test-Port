@@ -2,7 +2,6 @@ import React from "react";
 import {Navigation} from "../../common/Navigation/Navigation";
 import s from "./Home.module.scss";
 import {Button} from "../../common/Button/Button";
-import {faArrowLeft} from "@fortawesome/free-solid-svg-icons/faArrowLeft";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons/faArrowRight";
 
 export const Home = () => {
