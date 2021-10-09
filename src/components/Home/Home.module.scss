@@ -74,15 +74,17 @@ html {
   }
 
   & .backDesktop {
-    position: fixed;
-    height: 200%;
-    width: 100%;
-    transform: rotate(-15deg);
-    left: -83%;
-    top: -50%;
-    background-color: $rootColor;
-    @media (min-width: 992px) {
-      display: none;
+    display: none;
+
+    @media (min-width: 850px) {
+      display: block;
+      position: fixed;
+      height: 200%;
+      width: 100%;
+      transform: rotate(-15deg);
+      left: -83%;
+      top: -50%;
+      background-color: $rootColor;
     }
   }
 }
