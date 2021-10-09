@@ -2,6 +2,8 @@ import React from "react";
 import {Navigation} from "../../common/Navigation/Navigation";
 import s from "./Home.module.scss";
 import {Button} from "../../common/Button/Button";
+import {faArrowLeft} from "@fortawesome/free-solid-svg-icons/faArrowLeft";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons/faArrowRight";
 
 export const Home = () => {
     return (
@@ -20,7 +22,7 @@ export const Home = () => {
                         focused on crafting clean & user‑friendly experiences.
                         I am passionate about building excellent software that improves the lives.
                     </p>
-                   <Button>more about me</Button>
+                   <Button icon={faArrowRight} link={"/about"}>more about me</Button>
                 </div>
             </section>
         </>

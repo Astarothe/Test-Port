@@ -4,41 +4,51 @@ import s from "./Info.module.scss";
 import {Button} from "../../../common/Button/Button";
 import codewars from "../../../assets/icons/codewars-icon.svg"
 import github from "../../../assets/icons/github-icon.svg"
+import {faDownload} from "@fortawesome/free-solid-svg-icons/faDownload";
 
-const info = [
+
+const info: InfoType [] = [
     {
         title: "First name :",
-        value: "Michel"
+        value: "Michel",
+        id: 1,
     },
     {
         title: "Last name :",
-        value: "Savich"
+        value: "Savich",
+        id: 2,
     },
     {
         title: "Age :",
-        value: "23 Years"
+        value: "23 Years",
+        id: 3,
     },
     {
         title: "Nationality :",
-        value: "Belorussian"
+        value: "Belorussian",
+        id: 4,
     },
 ]
-const info2 = [
+const info2: InfoType [] = [
     {
         title: "Location :",
-        value: "Belarus"
+        value: "Belarus",
+        id: 1,
     },
     {
         title: "Address :",
-        value: "Novopolock"
+        value: "Novopolock",
+        id: 2,
     },
     {
         title: "Phone :",
-        value: "+375295956879"
+        value: "+375295956879",
+        id: 3,
     },
     {
         title: "Telegram :",
-        value: "Astarothqq"
+        value: "Astarothqq",
+        id: 4,
     },
 ]
 
@@ -50,7 +60,7 @@ export const Info = () => {
                 <div className={s.infoWrapper}>
                     <ul className={s.infoList}>
                         {
-                            info.map(t => <li className={s.infoItem}>
+                            info.map(t => <li key={t.id} className={s.infoItem}>
                                 <span className={s.title}>{t.title} </span>
                                 <span className={s.value}>{t.value}</span>
                             </li>)
@@ -59,26 +69,26 @@ export const Info = () => {
                     </ul>
                     <ul className={s.infoList}>
                         {
-                            info2.map(t => <li className={s.infoItem}>
+                            info2.map(t => <li key={t.id} className={s.infoItem}>
                                 <span className={s.title}>{t.title} </span>
                                 <span className={s.value}>{t.value}</span>
                             </li>)
                         }
                     </ul>
                 </div>
-                <Button>Download cv</Button>
+                <Button icon={faDownload}>Download cv</Button>
             </div>
             <div className={s.links}>
                 <ul>
                     <li>
-                        <a href="#">
-                            <img src={codewars} alt=""/>
+                        <a href="https://www.codewars.com/users/Astarothe">
+                            <img src={codewars} alt="codewars"/>
                             <p>CodeWars</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src={github} alt=""/>
+                        <a href="https://github.com/Astarothe">
+                            <img src={github} alt="github"/>
                             <p>GitHub</p>
                         </a>
                     </li>
@@ -86,4 +96,10 @@ export const Info = () => {
             </div>
         </div>
     )
+}
+
+type InfoType = {
+    title: string
+    value: string
+    id: number
 }

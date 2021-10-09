@@ -4,11 +4,11 @@ import {Title} from "../../common/Title/Title";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import s from "./Contact.module.scss";
 import {faEnvelopeOpen} from "@fortawesome/free-solid-svg-icons/faEnvelopeOpen";
-import {Button} from "../../common/Button/Button";
-import {Input} from "../../common/Input/Input";
-import telegram from "../../assets/icons/telegram-icon.svg"
-import linkedin from "../../assets/icons/linkedin-icon.svg"
+import telegram from "../../assets/icons/telegrams-icon.svg";
+import linkedin from "../../assets/icons/linkedin-icon.svg";
 import {faPhoneSquareAlt} from "@fortawesome/free-solid-svg-icons/faPhoneSquareAlt";
+import {Form} from "./Form/Form";
+
 
 export const Contact = () => {
     return (
@@ -22,38 +22,31 @@ export const Contact = () => {
                         creative ideas or opportunities to be part of your visions.</p>
                     <p className={s.connect}>
                         <FontAwesomeIcon icon={faEnvelopeOpen} color={"white"} size={"sm"} className={s.iconMail}/>
-                         <span>Mail me</span>
-                        minatosavich@gmail.com
+                        <span>Mail me</span>
+                        <a href={"mailto:minatosavich@gmail.com"} target={"_blank"}>minatosavich@gmail.com</a>
                     </p>
                     <p className={s.connect}>
-                        <FontAwesomeIcon icon={faPhoneSquareAlt} color={"white"} size={"sm"} className={s.iconTelephone}/>
+                        <FontAwesomeIcon icon={faPhoneSquareAlt} color={"white"} size={"sm"}
+                                         className={s.iconTelephone}/>
                         <span>Call me</span>
-                        +37529 595 68 79
+                        <a href="tel:+375295956879" target={"_blank"}> +37529 595 68 79</a>
                     </p>
                     <ul className={s.listLink}>
                         <li className={`${s.item} ${s.telegram}`}>
-                            <a href="#">
+                            <a href="https://telegram.me/Astarothqq" target={"_blank"}>
                                 <img src={telegram} alt=""/>
                             </a>
                         </li>
                         <li className={`${s.item} ${s.linkedin}`}>
-                            <a href="#">
+                            <a href="https://linkedin.com/in/michel-savich" target={"_blank"}>
                                 <img src={linkedin} alt=""/>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div className={s.formWrapper}>
-                    <form action="">
-                        <Input type={"text"} name={"name"} placeholder={"your name"}/>
-                        <Input type={"email"} name={"email"} placeholder={"your email"}/>
-                        <Input type={"text"} name={"subject"} placeholder={"your subject"}/>
-                        <textarea placeholder={"your message"}/>
-                        <Button>send message</Button>
-                    </form>
-                </div>
-
+                <Form/>
             </div>
+
         </>
     )
 }

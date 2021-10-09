@@ -7,7 +7,7 @@
   background-color: #252525;
   width: 100%;
   left: 0;
-  padding: 16px 0;
+  padding: 16px 25px 14px;
   border-bottom: 1px solid #333;
   z-index: 99999999999999999999;
 
@@ -24,7 +24,7 @@
   h1 {
     @include text($titleFontFamily, 26px, 1.2, upperCase, #fff);
     font-weight: 900;
-    margin: 0 25px;
+    margin: 0;
     @media (min-width: 580px) {
       font-size: 56px;
     }

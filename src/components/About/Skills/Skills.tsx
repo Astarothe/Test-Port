@@ -8,9 +8,7 @@ import typescript from "../../../assets/icons/typescript-icon.svg"
 import html from "../../../assets/icons/html-icon.svg"
 import css from "../../../assets/icons/css-icon.svg"
 import restApi from "../../../assets/icons/rest-api-icon.svg"
-import github from "../../../assets/icons/github-icon.svg"
 import sass from "../../../assets/icons/sass-icon.svg"
-import jest from "../../../assets/icons/jest-icon.svg"
 
 export const Skills = () => {
     return (
@@ -18,36 +16,59 @@ export const Skills = () => {
             <Title center={true}>My skills</Title>
             <ul className={s.list}>
                 <li className={s.item}>
-                    <img src={react} alt=""/>
+                    <div>
+                        <img src={react} alt=""/>
+                    </div>
+
                     <p>React</p>
                 </li>
                 <li className={s.item}>
-                    <img src={redux} alt=""/>
+                    <div>
+                        <img src={redux} alt=""/>
+                    </div>
+
                     <p>Redux</p>
                 </li>
                 <li className={s.item}>
-                    <img src={javascript} alt=""/>
-                    <p>JavaScript</p>
-                </li>
-                <li className={s.item}>
-                    <img src={typescript} alt=""/>
-                    <p>TypeScript</p>
-                </li>
-                <li className={s.item}>
-                    <img src={restApi} alt=""/>
+                    <div>
+                        <img src={restApi} alt=""/>
+                    </div>
+
                     <p>REST API</p>
                 </li>
                 <li className={s.item}>
-                    <img src={sass} alt=""/>
+                    <div>
+                        <img src={sass} alt=""/>
+                    </div>
+
                     <p>Sass </p>
                 </li>
+                <li className={s.item}>
+                    <div>
+                        <img src={javascript} alt=""/>
+                    </div>
+                    <p>JavaScript</p>
+                </li>
+                <li className={s.item}>
+                    <div>
+                        <img src={typescript} alt=""/>
+                    </div>
+                    <p>TypeScript</p>
+                </li>
+
 
                 <li className={s.item}>
-                    <img src={html} alt=""/>
+                    <div>
+                        <img src={html} alt=""/>
+                    </div>
+
                     <p>HTML5</p>
                 </li>
                 <li className={s.item}>
-                    <img src={css} alt=""/>
+                    <div>
+                        <img src={css} alt=""/>
+                    </div>
+
                     <p>CSS</p>
                 </li>
 

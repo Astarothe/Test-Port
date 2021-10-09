@@ -23,8 +23,9 @@
       }
 
       .title {
-        color: darkgrey;
+        color: white;
         font-weight: 500;
+        opacity: 0.8;
       }
 
       .value {
@@ -69,9 +70,25 @@
         align-items: center;
         text-decoration: none;
         color: white;
+        transition: 0.3s;
 
-        img{
+
+
+
+        &:hover {
+          opacity: 0.7;
+          box-shadow: 0px 0px 10px #4169e1;
+        }
+
+        img {
           width: 50px;
+        }
+
+        p {
+          font-size: 16px;
+          @media (min-width: 992px) {
+            font-size: 20px;
+          }
         }
       }
     }

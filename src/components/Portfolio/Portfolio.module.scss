@@ -1,20 +1,69 @@
 
 .portfolioWrapper {
-  padding: 85px 25px 0;
+  padding: 85px 10px 10px;
   color: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
 
-  .list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+  @media (min-width: 580px) {
+    padding: 0 15px;
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: calc(100% - 195px);
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
 
-    .item {
-      padding: 15px;
-      img{
-        object-fit: cover;
-        object-position: top;
-        border-radius: 20px;
+
+}
+
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  @media (min-width: 580px) {
+    width: 510px;
+  }
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+  @media (min-width: 992px) {
+    width: 100%;
+  }
+
+  .item {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+
+
+    @media (min-width: 580px) {
+      width: 50%;
+    }
+    @media (min-width: 992px) {
+      width: 33.333333%;
+    }
+
+    figure {
+      margin: 0;
+      height: 166px;
+      background: royalblue;
+      border-radius: 5px;
+
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      img {
+        width: 100%;
       }
     }
   }

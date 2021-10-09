@@ -41,6 +41,9 @@
   &:hover:before {
     transform: translateX(0);
   }
+  &:focus:before {
+    transform: translateX(0);
+  }
 
   & .buttonIcon {
     position: absolute;

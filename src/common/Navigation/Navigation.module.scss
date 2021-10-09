@@ -66,19 +66,31 @@
 
 
       & a {
-        @include text($titleFontFamily, 26px, 1.6, upperCase, #fff);
+        @include text($titleFontFamily, 18px, 1.6, upperCase, #fff);
         text-transform: uppercase;
         transition-delay: 2s;
         display: block;
         text-decoration: none;
         padding: 14px 0;
         position: relative;
+        @media (min-width: 580px) {
+          font-size: 26px;
+        }
+
 
         & .title {
           position: absolute;
           display: inline-block;
-          left: 60px;
+          left: 40px;
           background-color: transparent;
+          @media (min-width: 580px) {
+            left: 50px;
+          }
+        }
+
+        &.active .title {
+          color: $rootColor;
+          font-weight: bold;
         }
 
         @media (min-width: 580px) {
@@ -99,8 +111,8 @@
 }
 
 .menuToggle.menuMain {
-  right: 10px;
-  top: 5px;
+  right: 8px;
+  top: 3px;
   @media (min-width: 580px) {
     right: 30px;
     top: 30px;
@@ -126,7 +138,7 @@
   transform: none;
 }
 
-.menuToggle input:checked body{
+.menuToggle input:checked body {
   overflow: hidden;
 }
 
@@ -168,6 +180,12 @@
         padding: 0;
         width: 50px;
         height: 50px;
+
+        &.active {
+          background-color: $rootColor;
+          border-radius: 50px;
+        }
+
 
         & h2 {
           z-index: -1;
