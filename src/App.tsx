@@ -17,10 +17,16 @@ function App() {
     ]
     const {pathname} = useLocation();
     useEffect(() => {
-        window.scrollTo(0, 0);
-        return () => {
 
-        }
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+            document.body.style.overflow = "hidden"
+        }, 500)
+
+
+        setTimeout(() => {
+            document.body.style.overflow = "auto"
+        }, 2000)
     }, [pathname]);
 
     if (pathname !== "/home" &&
@@ -39,11 +45,9 @@ function App() {
                             timeout={2000}
                             classNames={"page"}
                             unmountOnExit
-                            in={match != null}
-                        >
+                            in={match != null}>
                             <>
                                 <div className={"page"}>
-
                                     <Component/>
                                 </div>
                                 <span className={"before"}></span>
