@@ -1,8 +1,8 @@
 import {combineReducers, createStore} from "redux";
-import {pageReducer} from "./pageReducer";
+import {portfolioReducer} from "./PortfolioReducer";
 
 const RootReducer = combineReducers({
-    page: pageReducer,
+    portfolio: portfolioReducer,
 })
 
 export const store = createStore(RootReducer)
