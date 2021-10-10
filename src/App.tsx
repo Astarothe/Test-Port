@@ -18,6 +18,9 @@ function App() {
     const {pathname} = useLocation();
     useEffect(() => {
         window.scrollTo(0, 0);
+        return () => {
+
+        }
     }, [pathname]);
 
     if (pathname !== "/home" &&
@@ -38,15 +41,17 @@ function App() {
                             unmountOnExit
                             in={match != null}
                         >
-                            <div className={"page"}>
-                                <Component/>
-                            </div>
+                            <>
+                                <div className={"page"}>
+
+                                    <Component/>
+                                </div>
+                                <span className={"before"}></span>
+                            </>
                         </CSSTransition>
                     )}
                 </Route>
             ))}
-
-
         </>
 
     );
