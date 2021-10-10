@@ -1,4 +1,4 @@
-import React, {FC, useState} from "react";
+import React, {FC, useEffect, useState} from "react";
 import {NavLink} from "react-router-dom";
 import s from "./Navigation.module.scss"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -7,7 +7,7 @@ import {faUser} from "@fortawesome/free-solid-svg-icons/faUser";
 import {faBriefcase} from "@fortawesome/free-solid-svg-icons/faBriefcase";
 import {faEnvelopeOpen} from "@fortawesome/free-solid-svg-icons/faEnvelopeOpen";
 
-const navItem:NavItemType[] = [
+const navItem: NavItemType[] = [
     {
         title: "home",
         icon: faHome,
@@ -37,8 +37,9 @@ const navItem:NavItemType[] = [
 export const Navigation: FC<NavigationProps> = ({homePage}) => {
     const [toggle, setToggle] = useState(false)
     const sizePage = homePage ? `${s.menuToggle}` : `${s.menuToggle} ${s.menuMain}`
-
-    toggle ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto";
+    useEffect(() => {
+        toggle ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto";
+    }, [toggle])
 
     return (
         <nav>

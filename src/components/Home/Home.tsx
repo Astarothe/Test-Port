@@ -3,9 +3,11 @@ import {Navigation} from "../../common/Navigation/Navigation";
 import s from "./Home.module.scss";
 import {Button} from "../../common/Button/Button";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons/faArrowRight";
-import {useLocation} from "react-router-dom";
 
 export const Home = () => {
+
+
+
     return (
         <>
             <header>

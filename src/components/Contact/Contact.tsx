@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Header} from "../../common/Header/Header";
 import {Title} from "../../common/Title/Title";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";

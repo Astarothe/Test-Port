@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Header} from "../../common/Header/Header";
 import s from "./Portfolio.module.scss"
 import {Project} from "./Project/Project";
@@ -12,6 +12,7 @@ export const Portfolio = () => {
                                                    link={t.link}
                                                    backgroundImg={t.backgroundImg}
                                                    description={t.description}/>)
+
     return (
         <>
             <Header title={"My"} subtitle={"Portfolio"} backTitle={"works"}/>

@@ -6,7 +6,6 @@ import {Portfolio} from "./components/Portfolio/Portfolio";
 import {Contact} from "./components/Contact/Contact";
 import "./App.scss";
 import {CSSTransition} from "react-transition-group";
-import * as path from "path";
 
 
 function App() {
@@ -20,6 +19,7 @@ function App() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);
+
     if (pathname !== "/home" &&
         pathname !== "/about" &&
         pathname !== "/portfolio" &&
@@ -33,7 +33,7 @@ function App() {
                 <Route key={path} exact path={path}>
                     {({match}) => (
                         <CSSTransition
-                            timeout={1000}
+                            timeout={2000}
                             classNames={"page"}
                             unmountOnExit
                             in={match != null}
