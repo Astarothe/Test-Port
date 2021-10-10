@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import s from "./About.module.scss"
 import {Header} from "../../common/Header/Header";
 import {Separator} from "../../common/Separator/Separator";
 import {Info} from "./Info/Info";
 import {Skills} from "./Skills/Skills";
 import { Experience } from "./Experience/Experience";
+import {useLocation} from "react-router-dom";
 
 export const About = () => {
     return (

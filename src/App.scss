@@ -9,6 +9,7 @@
 }
 
 .page-exit-active {
+  overflow: hidden;
   position: absolute;
   animation: fade-out 1s forwards;
 }
@@ -22,7 +23,9 @@
     opacity: 1;
     transform: translateX(0);
   }
+
 }
+
 @keyframes fade-out {
   0% {
     opacity: 1;

@@ -57,7 +57,7 @@
     a {
       opacity: 1;
       transition: 0.3s;
-      background-color: white;
+      background-color: lightyellow;
       text-decoration: none;
       padding: 15px 30px;
       position: relative;
@@ -87,6 +87,8 @@
       @include text($titleFontFamily, 17px, 1.2, upperCase, #fff);
       display: block;
       margin-bottom: 10px;
+      font-weight: bold;
+      opacity: 0.8;
       @media (min-width: 580px) {
         font-size: 18px;
       }

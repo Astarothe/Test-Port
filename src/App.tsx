@@ -1,5 +1,5 @@
-import React from 'react';
-import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
+import React, {useEffect} from 'react';
+import {Redirect, Route, useLocation} from "react-router-dom";
 import {Home} from './components/Home/Home';
 import {About} from './components/About/About';
 import {Portfolio} from "./components/Portfolio/Portfolio";
@@ -15,25 +15,32 @@ function App() {
         {path: "/portfolio", Component: Portfolio},
         {path: "/contact", Component: Contact},
     ]
+    const {pathname} = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
 
     return (
         <>
-            {routes.map(({path, Component}) => (
-                <Route key={path} exact path={path}>
-                    {({match}) => (
-                        <CSSTransition
-                            timeout={2000}
-                            classNames={"page"}
-                            unmountOnExit
-                            in={match != null}
-                        >
-                            <div className={"page"}>
-                                <Component/>
-                            </div>
-                        </CSSTransition>
-                    )}
-                </Route>
-            ))}
+            <Redirect to={"/home"}/>
+                {routes.map(({path, Component}) => (
+                    <Route key={path} exact path={path}>
+                        {({match}) => (
+                            <CSSTransition
+                                timeout={1000}
+                                classNames={"page"}
+                                unmountOnExit
+                                in={match != null}
+                            >
+                                <div className={"page"}>
+                                    <Component/>
+                                </div>
+                            </CSSTransition>
+                        )}
+                    </Route>
+                ))}
 
 
         </>
