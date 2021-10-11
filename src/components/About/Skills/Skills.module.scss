@@ -59,14 +59,16 @@
         height: 110px;
         margin-bottom: 30px;
       }
+
+      img {
+        width: 60px;
+        height: 60px;
+        transform: rotate(-45deg);
+      }
     }
 
-
-    img {
-      width: 60px;
-      height: 60px;
-      transform: rotate(-45deg);
+    p {
+      font-weight: 700;
     }
-
   }
 }

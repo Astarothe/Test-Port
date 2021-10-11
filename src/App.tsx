@@ -20,13 +20,13 @@ function App() {
 
         setTimeout(() => {
             window.scrollTo(0, 0);
-            document.body.style.overflow = "hidden"
+            // document.body.style.overflow = "hidden"
         }, 500)
-
-
-        setTimeout(() => {
-            document.body.style.overflow = "auto"
-        }, 2000)
+        //
+        //
+        // setTimeout(() => {
+        //     document.body.style.overflow = "auto"
+        // }, 2000)
     }, [pathname]);
 
     if (pathname !== "/home" &&
