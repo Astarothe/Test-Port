@@ -16,8 +16,8 @@ export const Home = () => {
             </header>
             <section className={s.home}>
                 <div className={s.backDesktop}></div>
-                <Fade delay={700} duration={1000}>
-                    <Slide delay={700} direction={"up"} duration={1000} className={s.slide}>
+                <Fade delay={1000} duration={1000}>
+                    <Slide delay={1000} direction={"up"} duration={1000} className={s.slide}>
                         <div className={s.wrapper}>
                             <h1>I'm mishel savich.
                                 <span>Front-end Developer</span>
