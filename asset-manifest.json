@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.d50ad56c.chunk.css",
-    "main.js": "/Portfolio/static/js/main.9325440d.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.9325440d.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.9bc33f0f.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.9bc33f0f.js.map",
-    "static/js/2.cb22a95d.chunk.js": "/Portfolio/static/js/2.cb22a95d.chunk.js",
-    "static/js/2.cb22a95d.chunk.js.map": "/Portfolio/static/js/2.cb22a95d.chunk.js.map",
-    "static/js/3.bb5279ab.chunk.js": "/Portfolio/static/js/3.bb5279ab.chunk.js",
-    "static/js/3.bb5279ab.chunk.js.map": "/Portfolio/static/js/3.bb5279ab.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.6b22eda7.chunk.css",
+    "main.js": "/Portfolio/static/js/main.07648073.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.07648073.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.148cf5c4.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.148cf5c4.js.map",
+    "static/js/2.b87f8252.chunk.js": "/Portfolio/static/js/2.b87f8252.chunk.js",
+    "static/js/2.b87f8252.chunk.js.map": "/Portfolio/static/js/2.b87f8252.chunk.js.map",
+    "static/js/3.604bd15c.chunk.js": "/Portfolio/static/js/3.604bd15c.chunk.js",
+    "static/js/3.604bd15c.chunk.js.map": "/Portfolio/static/js/3.604bd15c.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.d50ad56c.chunk.css.map": "/Portfolio/static/css/main.d50ad56c.chunk.css.map",
-    "static/js/2.cb22a95d.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.cb22a95d.chunk.js.LICENSE.txt",
+    "static/css/main.6b22eda7.chunk.css.map": "/Portfolio/static/css/main.6b22eda7.chunk.css.map",
+    "static/js/2.b87f8252.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.b87f8252.chunk.js.LICENSE.txt",
     "static/media/barbershop.aec421cc.png": "/Portfolio/static/media/barbershop.aec421cc.png",
     "static/media/codewars-icon.273bac90.svg": "/Portfolio/static/media/codewars-icon.273bac90.svg",
     "static/media/css-icon.be022d5e.svg": "/Portfolio/static/media/css-icon.be022d5e.svg",
@@ -32,9 +32,9 @@
     "static/media/virtual-piano.3f4dd4e2.png": "/Portfolio/static/media/virtual-piano.3f4dd4e2.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9bc33f0f.js",
-    "static/js/2.cb22a95d.chunk.js",
-    "static/css/main.d50ad56c.chunk.css",
-    "static/js/main.9325440d.chunk.js"
+    "static/js/runtime-main.148cf5c4.js",
+    "static/js/2.b87f8252.chunk.js",
+    "static/css/main.6b22eda7.chunk.css",
+    "static/js/main.07648073.chunk.js"
   ]
 }
