@@ -19,3 +19,9 @@
     max-width: 1140px;
   }
 }
+
+.slide {
+  @media (min-width: 992px) {
+    margin-bottom: 330px;
+  }
+}

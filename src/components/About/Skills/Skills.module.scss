@@ -12,6 +12,18 @@
     justify-content: center;
   }
 
+  .wrapperFade {
+    width: 50%;
+
+    @media (min-width: 992px) {
+      flex: 0 0 25%
+    }
+
+  }
+  .wrapperSlide {
+    width: 50%;
+  }
+
 
   .item {
     flex: 0 0 49%;

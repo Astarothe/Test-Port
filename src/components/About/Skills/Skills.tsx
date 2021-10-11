@@ -9,70 +9,35 @@ import html from "../../../assets/icons/html-icon.svg"
 import css from "../../../assets/icons/css-icon.svg"
 import restApi from "../../../assets/icons/rest-api-icon.svg"
 import sass from "../../../assets/icons/sass-icon.svg"
+import {Fade, Slide} from "react-awesome-reveal";
+
+const skills = [
+    {img: react, name: "React"},
+    {img: redux, name: "Redux"},
+    {img: restApi, name: "REST API"},
+    {img: sass, name: "Sass"},
+    {img: javascript, name: "JavaScript"},
+    {img: typescript, name: "TypeScript"},
+    {img: html, name: "HTML5"},
+    {img: css, name: "CSS"},
+]
 
 export const Skills = () => {
     return (
         <div>
             <Title center={true}>My skills</Title>
             <ul className={s.list}>
-                <li className={s.item}>
-                    <div>
-                        <img src={react} alt=""/>
-                    </div>
-
-                    <p>React</p>
-                </li>
-                <li className={s.item}>
-                    <div>
-                        <img src={redux} alt=""/>
-                    </div>
-
-                    <p>Redux</p>
-                </li>
-                <li className={s.item}>
-                    <div>
-                        <img src={restApi} alt=""/>
-                    </div>
-
-                    <p>REST API</p>
-                </li>
-                <li className={s.item}>
-                    <div>
-                        <img src={sass} alt=""/>
-                    </div>
-
-                    <p>Sass </p>
-                </li>
-                <li className={s.item}>
-                    <div>
-                        <img src={javascript} alt=""/>
-                    </div>
-                    <p>JavaScript</p>
-                </li>
-                <li className={s.item}>
-                    <div>
-                        <img src={typescript} alt=""/>
-                    </div>
-                    <p>TypeScript</p>
-                </li>
-
-
-                <li className={s.item}>
-                    <div>
-                        <img src={html} alt=""/>
-                    </div>
-
-                    <p>HTML5</p>
-                </li>
-                <li className={s.item}>
-                    <div>
-                        <img src={css} alt=""/>
-                    </div>
-
-                    <p>CSS</p>
-                </li>
-
-
+                {skills.map((t,i) =>
+                    <Fade className={s.wrapperFade} delay={300} duration={1000} triggerOnce={true} >
+                        <Slide className={s.wrapperSlide} delay={300} duration={1000} direction={ i % 2 === 0 ? "left" : "right"} triggerOnce={true}>
+                            <li className={s.item}>
+                                <div>
+                                    <img src={t.img} alt={t.name}/>
+                                </div>
+                                <p>{t.name}</p>
+                            </li>
+                        </Slide>
+                    </Fade>)}
             </ul>
         </div>
     )

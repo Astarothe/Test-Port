@@ -18,15 +18,13 @@ export const About = () => {
                     </Slide>
                 </Fade>
                 <Separator/>
-                <Fade triggerOnce={true} direction={"up"} duration={2000}>
-                    <Slide triggerOnce={true} direction={"up"}>
-                        <Skills/>
-                        <Separator/>
-                    </Slide>
-                </Fade>
 
-                <Fade triggerOnce={true} direction={"up"} fraction={0} duration={500}>
-                    <Slide triggerOnce={true} direction={"up"} fraction={0}>
+                        <Skills/>
+
+                <Separator/>
+
+                <Fade triggerOnce={true} direction={"up"}>
+                    <Slide triggerOnce={true} direction={"up"}>
                         <Experience/>
                     </Slide>
                 </Fade>

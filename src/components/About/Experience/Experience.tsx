@@ -2,6 +2,7 @@ import React from "react";
 import {Title} from "../../../common/Title/Title";
 import s from "./Experience.module.scss"
 import {Education} from "./Education/Education";
+import {Fade, Slide} from "react-awesome-reveal";
 
 export type EducationType = {
     year: string
@@ -38,14 +39,18 @@ const education: EducationType[] = [
 
 export const Experience = () => {
     return (
-        <div>
-            <Title center={true}>experience & education</Title>
-            <ul className={s.list}>
-                {education.map((t, i) =>
-                    <Education key={i} year={t.year} title={t.title}
-                               subtitle={t.subtitle}
-                               description={t.description}/>)}
-            </ul>
-        </div>
+        <Fade triggerOnce={true} direction={"up"} duration={1500}>
+            <Slide triggerOnce={true} direction={"up"} duration={1500}>
+                <div>
+                    <Title center={true}>experience & education</Title>
+                    <ul className={s.list}>
+                        {education.map((t, i) =>
+                            <Education key={i} year={t.year} title={t.title}
+                                       subtitle={t.subtitle}
+                                       description={t.description}/>)}
+                    </ul>
+                </div>
+            </Slide>
+        </Fade>
     )
 }
