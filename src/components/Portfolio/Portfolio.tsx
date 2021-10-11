@@ -15,10 +15,10 @@ export const Portfolio = () => {
               triggerOnce={true}
               className={s.animateWrapper}
               key={i}>
-            <Slide delay={i > 1 ? 1000 : 1000 }
+            <Slide delay={i > 1 ? 1500 : 1000 }
                    direction={"up"}
                    triggerOnce={true}
-                   duration={i > 1 ? 1000 : 1000 * (i + 1 )}
+                   duration={i > 1 ? 1500 : 1000 * (i + 1 )}
                    className={s.animate}>
                 <Project
                     title={t.title}
