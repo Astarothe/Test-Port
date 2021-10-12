@@ -1,9 +1,9 @@
-import React, {useEffect} from "react";
+import React from "react";
 import {Navigation} from "../../common/Navigation/Navigation";
 import s from "./Home.module.scss";
 import {Button} from "../../common/Button/Button";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons/faArrowRight";
-import {Fade, Flip, Slide} from "react-awesome-reveal";
+import {Fade, Slide} from "react-awesome-reveal";
 
 
 export const Home = () => {

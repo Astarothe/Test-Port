@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Redirect, Route, useLocation} from "react-router-dom";
 import {Home} from './components/Home/Home';
 import {About} from './components/About/About';
@@ -16,7 +16,10 @@ function App() {
         {path: "/contact", Component: Contact},
     ]
     const {pathname} = useLocation();
+    const [res, ser] = useState(true)
+
     useEffect(() => {
+        ser(!res)
 
         setTimeout(() => {
             window.scrollTo(0, 0);

@@ -27,9 +27,9 @@ export const Skills = () => {
         <div>
             <Title center={true}>My skills</Title>
             <ul className={s.list}>
-                {skills.map((t,i) =>
-                    <Fade className={s.wrapperFade} delay={300} duration={1000} triggerOnce={true} >
-                        <Slide className={s.wrapperSlide} delay={300} duration={1000} direction={ i % 2 === 0 ? "left" : "right"} triggerOnce={true}>
+                {skills.map((t, i) =>
+                    <Fade key={i} className={s.wrapperFade} direction={"up"} fraction={0.1} triggerOnce={true}>
+                        <Slide direction={"up"} fraction={0.1} triggerOnce={true} >
                             <li className={s.item}>
                                 <div>
                                     <img src={t.img} alt={t.name}/>
