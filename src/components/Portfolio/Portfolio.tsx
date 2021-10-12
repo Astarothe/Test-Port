@@ -10,23 +10,12 @@ import {Fade, Slide} from "react-awesome-reveal";
 export const Portfolio = () => {
     const projects = useSelector<AppType, PortfolioState[]>(state => state.portfolio)
     const allProjects = projects.map((t, i) =>
-        <Fade delay={i > 1 ? 1000 : 1000 + ((i + 1) * 100)}
-              duration={i > 1 ? 1000 : 1000 + ((i + 1) * 100)}
-              triggerOnce={true}
-              className={s.animateWrapper}
-              key={i}>
-            <Slide delay={i > 1 ? 1500 : 1000 }
-                   direction={"up"}
-                   triggerOnce={true}
-                   duration={i > 1 ? 1500 : 1000 * (i + 1 )}
-                   className={s.animate}>
-                <Project
-                    title={t.title}
-                    link={t.link}
-                    backgroundImg={t.backgroundImg}
-                    description={t.description}/>
-            </Slide>
-        </Fade>
+        <Project
+            key={i}
+            title={t.title}
+            link={t.link}
+            backgroundImg={t.backgroundImg}
+            description={t.description}/>
     )
 
     return (

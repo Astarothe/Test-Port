@@ -1,7 +1,6 @@
 import React, {FC} from "react";
 import s from "./Project.module.scss"
 import {PortfolioState} from "../../../bll/PortfolioReducer";
-import {Fade, Slide} from "react-awesome-reveal";
 
 export const Project: FC<PortfolioState> = ({backgroundImg, link, description, title}) => {
     return (

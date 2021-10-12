@@ -45,7 +45,7 @@ function App() {
                 <Route key={path} exact path={path}>
                     {({match}) => (
                         <CSSTransition
-                            timeout={2000}
+                            timeout={1000}
                             classNames={"page"}
                             unmountOnExit
                             in={match != null}>

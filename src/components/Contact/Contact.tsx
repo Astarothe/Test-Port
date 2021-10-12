@@ -15,8 +15,8 @@ export const Contact = () => {
     return (
         <>
             <Header title={"Get in"} subtitle={"touch"} backTitle={"contact"}/>
-            <Fade delay={1000} duration={1000} triggerOnce={true}>
-                <Slide delay={1000} direction={"up"} duration={1000} className={s.slide} triggerOnce={true}>
+            <Fade direction={"up"} duration={1500} triggerOnce={true}>
+                <Slide direction={"up"} duration={1500} className={s.slide} triggerOnce={true}>
                     <div className={s.contactWrapper}>
                         <div className={s.contactInfo}>
                             <Title>Don't be shy !</Title>

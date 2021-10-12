@@ -7,7 +7,6 @@ import {Fade, Slide} from "react-awesome-reveal";
 
 
 export const Home = () => {
-
     return (
         <>
 
@@ -16,8 +15,8 @@ export const Home = () => {
             </header>
             <section className={s.home}>
                 <div className={s.backDesktop}></div>
-                <Fade delay={1000} duration={1000}>
-                    <Slide delay={1000} direction={"up"} duration={1000} className={s.slide}>
+                <Fade direction={"up"} duration={1500}>
+                    <Slide direction={"up"} duration={1500} className={s.slide}>
                         <div className={s.wrapper}>
                             <h1>I'm mishel savich.
                                 <span>Front-end Developer</span>

@@ -39,17 +39,3 @@
   }
 }
 
-.animateWrapper {
-  width: 100%;
-  @media (min-width: 992px) {
-    width: 50%;
-  }
-  &:nth-last-child(1) li{
-    padding-bottom: 25px;
-  }
-
-  .animate {
-    width: 100%;
-  }
-
-}

@@ -24,21 +24,22 @@ const skills = [
 
 export const Skills = () => {
     return (
-        <div>
-            <Title center={true}>My skills</Title>
-            <ul className={s.list}>
-                {skills.map((t, i) =>
-                    <Fade key={i} className={s.wrapperFade} direction={"up"} fraction={0.1} triggerOnce={true}>
-                        <Slide direction={"up"} fraction={0.1} triggerOnce={true} >
-                            <li className={s.item}>
+        <Fade triggerOnce={true} direction={"up"} duration={1500}>
+            <Slide triggerOnce={true} direction={"up"} duration={1500}>
+                <div>
+                    <Title center={true}>My skills</Title>
+                    <ul className={s.list}>
+                        {skills.map((t, i) =>
+                            <li className={s.item} key={i}>
                                 <div>
                                     <img src={t.img} alt={t.name}/>
                                 </div>
                                 <p>{t.name}</p>
                             </li>
-                        </Slide>
-                    </Fade>)}
-            </ul>
-        </div>
+                        )}
+                    </ul>
+                </div>
+            </Slide>
+        </Fade>
     )
 }
